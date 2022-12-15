@@ -20,7 +20,7 @@ describe('Objednávka pro MŠ/ZŠ', () => {
         browser.url('/objednavka/pridat');
     });
 
-    it('Vyplnenie objednavky', () => {
+    it('Spravne vyplnenie objednavky', () => {
         
         const card = $('.card');
         expect(card).toBeDisplayed();
@@ -38,7 +38,8 @@ describe('Objednávka pro MŠ/ZŠ', () => {
         expect(odberatel).toEqual(clientName);
 
         const adresa = getFieldValueById('address');
-        console.log('Uplna adresa je: ' + address);
+        console.log('Uplna adresa je: ' + adresa);
+        expect(adresa).toEqual(address);
 
         const zastoupena = $('#substitute');
         zastoupena.setValue(substituteName);
@@ -76,6 +77,16 @@ describe('Objednávka pro MŠ/ZŠ', () => {
         const ulozit = $('.btn-primary');
         ulozit.click();
 
+    });
+
+    it('Nespravne vyplnenie objednavky', () => {
+        const ico = $('#ico');
+        ico.setValue('INVALID');
+        browser.keys('Enter');
+
+        const toastMessage = $('.toast-message');
+        console.log(toastMessage.getText());
+        toastMessage.waitForDisplayed({reverse: true});
     });
     
 });
