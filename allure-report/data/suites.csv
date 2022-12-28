@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Dec 28 19:36:56 CET 2022","Wed Dec 28 19:37:09 CET 2022","13734","","Objednávka pro MŠ/ZŠ","","Objednávka pro MŠ/ZŠ","Spravne vyplnenie objednavky","Spravne vyplnenie objednavky",""
+"passed","Wed Dec 28 19:37:09 CET 2022","Wed Dec 28 19:37:24 CET 2022","14410","","Objednávka pro MŠ/ZŠ","","Objednávka pro MŠ/ZŠ","Nespravne vyplnenie objednavky","Nespravne vyplnenie objednavky",""

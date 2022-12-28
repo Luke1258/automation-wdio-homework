@@ -1,0 +1,1 @@
+[{"uid":"7fb3cd55451cd7bb","name":"Spravne vyplnenie objednavky","time":{"start":1672252616148,"stop":1672252629882,"duration":13734},"status":"passed","severity":"normal"},{"uid":"6a0e0d03ce5ab0ab","name":"Nespravne vyplnenie objednavky","time":{"start":1672252629882,"stop":1672252644292,"duration":14410},"status":"passed","severity":"normal"}]
